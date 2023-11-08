@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temperatureConverter.css">
+    <title style="text-transform: capitalize;">temprature converter project</title>
+</head>
+<body>
+    <div class="container">
+        <form id="tempCalculator" onsubmit="calculateTemp(); return false">
+            <label for="temp">
+                please enter the temperature you have convert to 
+            </label> <br>
+            <input  type="number" name="temp" id="temp">
+            <select name="temp-difference" id="temp-difference">
+                <option value="celcius">°Celcius</option>
+                <option value="fahrenheit">°Fahrenheit</option>
+                <option value="kelvin">K Kelvin</option>
+                
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit-button"> <br />
+            <span id="resultContainer"></span>
+            </form>
+    </div>
+    
+    <script src="temperatureConverter.js"></script>
+</body>
+</html>
